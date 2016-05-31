@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_color">#00bb9c</color>
+
+    <color name="white">#FFFFFF</color><!--白色 -->
+
+    <color name="lightgrey">#D3D3D3</color><!--亮灰色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="grey">#808080</color><!--灰色 -->
+
+    <color name="image_default_mask">#22000000</color>
+    <color name="image_select_mask">#88000000</color>
+
+</resources>

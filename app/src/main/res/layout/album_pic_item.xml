@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <cn.ss.ss.albumtest.view.SquareImageView
+        android:id="@+id/item_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/album_default_loading_pic"/>
+    
+    <!-- 加入遮罩层，避免图片与checkbox颜色相同影响 -->
+    <View
+        android:id="@+id/image_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:background="@color/image_default_mask" 
+        />
+    
+    <LinearLayout 
+        android:id="@+id/album_item_ll"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content" 
+	    android:padding="5dp"
+	    android:layout_gravity="top|end"
+	    android:background="@android:color/transparent">
+	    <CheckBox  
+	        android:id="@+id/album_checkbox"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:button="@drawable/bg_checkbox"
+	        android:checked="false"
+	        android:focusable="false"
+	        android:clickable="false"
+	        /> 
+    </LinearLayout>
+
+    
+
+</FrameLayout>
